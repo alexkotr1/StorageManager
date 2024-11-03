@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.alexk.storagemanagererp.DBSettingsController">
+    <MenuBar fx:id="menuBar" />
+    <VBox alignment="CENTER" spacing="10">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20" />
+        </padding>
+
+        <Label text="Database:" />
+        <TextField fx:id="dbName" />
+
+        <Label text="Username:" />
+        <TextField fx:id="dbUsername" />
+
+        <Label text="Password:" />
+        <TextField fx:id="dbPassword" />
+
+        <Label text="Server address:" />
+        <TextField fx:id="dbAddress" />
+
+        <Label text="Server port:" />
+        <TextField fx:id="dbPort" />
+
+        <Button text="Αποθήκευση" onAction="#handleSaveButtonAction" />
+
+        <!-- Additional UI components or buttons can be added here -->
+
+    </VBox>
+</AnchorPane>

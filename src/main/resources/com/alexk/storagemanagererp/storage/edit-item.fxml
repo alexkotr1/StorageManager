@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.alexk.storagemanagererp.storage.EditStorageItemController">
+    <MenuBar fx:id="menuBar" />
+    <VBox alignment="CENTER" spacing="10">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20" />
+        </padding>
+
+        <Label text="Όνομα Είδους:" />
+        <TextField fx:id="itemNameField" />
+
+        <Label text="Ποσότητα:" />
+        <TextField fx:id="quantityField" />
+
+        <Label text="Τιμή:" />
+        <TextField fx:id="priceField" />
+
+        <Label text="Barcode:" />
+        <HBox spacing="10">
+            <TextField fx:id="barcodeField" />
+            <Button fx:id="generateBarcode" text="Δημιουργία" onAction="#handleCreateBarcode"/>
+        </HBox>
+        <Button text="Επεξεργασία" onAction="#handleSaveButtonAction" />
+
+    </VBox>
+</AnchorPane>
