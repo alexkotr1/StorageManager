@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.alexk.erp.erp.AddClientController">
+    <MenuBar fx:id="menuBar" />
+    <VBox alignment="CENTER" spacing="10">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20" />
+        </padding>
+
+        <Label text="Ονοματεπώνυμο:" />
+        <TextField fx:id="clientNameField" />
+
+        <Label text="Τηλέφωνο:" />
+        <TextField fx:id="phoneField" />
+
+        <Label text="Διεύθυνση:" />
+        <TextField fx:id="addressField" />
+
+        <Label text="ΑΦΜ:" />
+        <TextField fx:id="taxCodeField" />
+        <Button text="Προσθήκη" onAction="#handleSaveButtonAction" />
+
+        <!-- Additional UI components or buttons can be added here -->
+
+    </VBox>
+</AnchorPane>
